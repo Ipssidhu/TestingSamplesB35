@@ -11,7 +11,7 @@ public class SampleFourTest {
 	  public void testTwo() {
 		  System.out.println("Test 42 in SampleFour");
 	  }
-	  @Test
+	  @Test(groups="feature3")
 	  public void testThree() {
 		  System.out.println("Test 43 in SampleFour");
 	  }

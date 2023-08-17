@@ -3,9 +3,17 @@
 <suite name="SampleSuite">
   <test  name="ModuleOneTest">
   <groups>
-  <run>
+  <define name="SmokeTest">
+       <include name ="feature1"/>
+       <include name ="feature3"/>
+  </define>
+  <define name="RegressionTest">
        <include name ="feature1"/>
        <include name ="feature2"/>
+       <include name ="feature3"/>
+  </define>
+  <run>
+       <include name="RegressionTest"/>
   </run>
   </groups>
     <classes>
