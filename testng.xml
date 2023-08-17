@@ -5,6 +5,7 @@
   <groups>
   <run>
        <include name ="feature1"/>
+       <include name ="feature2"/>
   </run>
   </groups>
     <classes>
