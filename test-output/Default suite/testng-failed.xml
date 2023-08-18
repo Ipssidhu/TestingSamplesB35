@@ -5,8 +5,10 @@
     <classes>
       <class name="testScripts.GooglePageTest">
         <methods>
+          <include name="setupExtent"/>
           <include name="searchSeleniumTest"/>
           <include name="teardown"/>
+          <include name="finishExtent"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testScripts.GooglePageTest -->

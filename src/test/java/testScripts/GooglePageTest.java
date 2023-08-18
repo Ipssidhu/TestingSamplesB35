@@ -8,18 +8,37 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-//import org.testng.annotations.AfterMethod;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-//import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+import commonUtils.Utility;
+
+
+
 public class GooglePageTest {
 	WebDriver driver;
-//	@BeforeMethod
+	ExtentReports extentReports;
+	ExtentSparkReporter spark;
+	ExtentTest extentTest;
+	
 	@BeforeTest
-	public void setup()
+	public void setupExtent() {
+		extentReports = new ExtentReports();
+		spark = new ExtentSparkReporter("test-output/SparkRport.html");
+		extentReports.attachReporter(spark);
+	}
+		
+	@BeforeMethod
+		public void setup()
 	{
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -41,17 +60,18 @@ public class GooglePageTest {
     //@Test(priority =2)
 	@Test
     public void searchSeleniumTest() {
+		extentReports.createTest("Search Selenium Test");
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Selenium Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search Page");	
+		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search P");	
 		
     }
 	   
 //  @Test(priority =1) 
 //  @Test(enabled=false)
-	@Test(alwaysRun=true,dependsOnMethods="searchSeleniumTest")
+//	@Test
 	    public void searchCucumberTest() {
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
@@ -61,19 +81,29 @@ public class GooglePageTest {
     }
 	
 	 // @Test(priority =2)
-//	@Test(enabled=false)
+   @Test
     public void searchAppiumTest() {
-		driver.navigate().to("https://www.google.com/");
+		extentReports.createTest("Search Appium Test");
+	   driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Appium Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
 		Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
     }
-  //  @AfterMethod
-    @AfterTest
-    public void teardown()
+    @AfterMethod
+   public void teardown(ITestResult result)
     {
+    	if(ITestResult.FAILURE == result.getStatus())
+    	{
+    		extentTest.fail(result.getThrowable().getMessage());
+    	//	String path = Utility.getScreenshotPath(driver);
+    	//	extentTest.addScreenCaptureFromPath(path);
+    		
+    	}
     	driver.close();
     }
-    
+    @AfterTest
+    public void finishExtent() {
+    	extentReports.flush();
+    }
 }

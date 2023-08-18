@@ -7,20 +7,43 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class SampleOneTest {
-  @Test
-  public void searchCypressTest() {
-	  WebDriver driver = new ChromeDriver();
+	WebDriver driver;
+	@Parameters("browser")
+	@BeforeMethod
+	public void Setup(String strBrowser) {
+		if(strBrowser.equalsIgnoreCase("chrome")) {
+		 driver = new ChromeDriver();
+		}
+		else if(strBrowser.equalsIgnoreCase("edge")) {
+			 driver = new EdgeDriver();
+			}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();
+		
+	}
+  @Test
+  public void searchCypressTest() {
+	  
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Cypress Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
 		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search");
+  }
+  
+  @AfterMethod
+  public void teardown()
+  {
+  	driver.close();
   }
   
 }
