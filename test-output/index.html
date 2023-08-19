@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-988642136\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-1988244610\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testScripts.GooglePageTest" class="method navigator-link" hash-for-method="searchSeleniumTest">searchSeleniumTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScripts.GooglePageTest" class="method navigator-link" hash-for-method="searchCucumberTest">searchCucumberTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testScripts.GooglePageTest" class="method navigator-link" hash-for-method="searchAppiumTest">searchAppiumTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScripts.GooglePageTest" class="method navigator-link" hash-for-method="searchSeleniumTest">searchSeleniumTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -140,17 +140,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchSeleniumTest">
-                  </a> <!-- searchSeleniumTest -->
-                  <span class="method-name">searchSeleniumTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Selenium Tutorial - Google Search P] but found [Selenium Tutorial - Google Search]
+                  <a name="searchCucumberTest">
+                  </a> <!-- searchCucumberTest -->
+                  <span class="method-name">searchCucumberTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Cucumber Tutorial - Google Search Page] but found [Cucumber Tutorial - Google Search]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at testScripts.GooglePageTest.searchSeleniumTest(GooglePageTest.java:68)
+	at testScripts.GooglePageTest.searchCucumberTest(GooglePageTest.java:81)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,9 +193,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchAppiumTest">
-                  </a> <!-- searchAppiumTest -->
-                  <span class="method-name">searchAppiumTest</span>
+                  <a name="searchSeleniumTest">
+                  </a> <!-- searchSeleniumTest -->
+                  <span class="method-name">searchSeleniumTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,7 +203,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-988642136\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-1988244610\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -254,13 +254,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchAppiumTest')
+data.setCell(0, 1, 'searchCucumberTest')
 data.setCell(0, 2, 'testScripts.GooglePageTest')
-data.setCell(0, 3, 3867);
+data.setCell(0, 3, 4303);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchSeleniumTest')
 data.setCell(1, 2, 'testScripts.GooglePageTest')
-data.setCell(1, 3, 3799);
+data.setCell(1, 3, 3648);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -298,35 +298,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">397 ms</span>
+                <span class="method-start">409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchAppiumTest</span>
-                <span class="method-start">2921 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchCucumberTest</span>
+                <span class="method-start">2900 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=searchAppiumTest status=SUCCESS method=GooglePageTest.searchAppiumTest()[pri:0, ins...)</span>
-                <span class="method-start">6792 ms</span>
+                <span class="method-name">teardown([TestResult name=searchCucumberTest status=FAILURE method=GooglePageTest.searchCucumberTest()[pri:0,...)</span>
+                <span class="method-start">7208 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6918 ms</span>
+                <span class="method-start">7443 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">searchSeleniumTest</span>
-                <span class="method-start">8190 ms</span>
+                <span class="method-start">8676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">teardown([TestResult name=searchSeleniumTest status=FAILURE method=GooglePageTest.searchSeleniumTest()[pri:0,...)</span>
-                <span class="method-start">11992 ms</span>
+                <span class="method-name">teardown([TestResult name=searchSeleniumTest status=SUCCESS method=GooglePageTest.searchSeleniumTest()[pri:0,...)</span>
+                <span class="method-start">12326 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">finishExtent</span>
-                <span class="method-start">12002 ms</span>
+                <span class="method-start">12455 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

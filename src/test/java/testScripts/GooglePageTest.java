@@ -36,6 +36,7 @@ public class GooglePageTest {
 		spark = new ExtentSparkReporter("test-output/SparkRport.html");
 		extentReports.attachReporter(spark);
 	}
+	
 		
 	@BeforeMethod
 		public void setup()
@@ -60,28 +61,28 @@ public class GooglePageTest {
     //@Test(priority =2)
 	@Test
     public void searchSeleniumTest() {
-		extentReports.createTest("Search Selenium Test");
+		extentTest = extentReports.createTest("Search Selenium Test");
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Selenium Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search P");	
+		Assert.assertEquals(driver.getTitle(), "Selenium Tutorial - Google Search");	
 		
     }
 	   
-//  @Test(priority =1) 
-//  @Test(enabled=false)
-//	@Test
+//  @Test(priority =1) //  @Test(enabled=false)
+	@Test
 	    public void searchCucumberTest() {
+		extentTest = extentReports.createTest("Search Cucumber Test");
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Cucumber Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getTitle(), "Cucumber Tutorial - Google Search");
+		Assert.assertEquals(driver.getTitle(), "Cucumber Tutorial - Google Search Page");
     }
 	
 	 // @Test(priority =2)
-   @Test
+  // @Test
     public void searchAppiumTest() {
 		extentReports.createTest("Search Appium Test");
 	   driver.navigate().to("https://www.google.com/");
@@ -90,18 +91,27 @@ public class GooglePageTest {
 		srcBox.sendKeys(Keys.ENTER);
 		Assert.assertEquals(driver.getTitle(), "Appium Tutorial - Google Search");
     }
+    
     @AfterMethod
-   public void teardown(ITestResult result)
+    public void teardown(ITestResult result)
+    {
+    	if(ITestResult.FAILURE == result.getStatus() ) {
+    		extentTest.fail(result.getThrowable().getMessage());
+    		String path = Utility.getScreenshotPath(driver);
+        	extentTest.addScreenCaptureFromPath(path);
+    	}
+    	driver.close();
+    }
+  /* public void teardown(ITestResult result)
     {
     	if(ITestResult.FAILURE == result.getStatus())
     	{
     		extentTest.fail(result.getThrowable().getMessage());
     	//	String path = Utility.getScreenshotPath(driver);
     	//	extentTest.addScreenCaptureFromPath(path);
-    		
-    	}
+    	    	}
     	driver.close();
-    }
+    } */
     @AfterTest
     public void finishExtent() {
     	extentReports.flush();

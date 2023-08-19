@@ -2,52 +2,33 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T07:58:47 GMT" name="Default suite" finished-at="2023-08-18T07:58:59 GMT" duration-ms="12020">
+  <suite started-at="2023-08-19T10:18:25 GMT" name="Default suite" finished-at="2023-08-19T10:18:38 GMT" duration-ms="12970">
     <groups>
     </groups>
-    <test started-at="2023-08-18T07:58:47 GMT" name="Default test" finished-at="2023-08-18T07:58:59 GMT" duration-ms="12020">
+    <test started-at="2023-08-19T10:18:25 GMT" name="Default test" finished-at="2023-08-19T10:18:38 GMT" duration-ms="12970">
       <class name="testScripts.GooglePageTest">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:47 GMT" name="setupExtent" finished-at="2023-08-18T07:58:47 GMT" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:25 GMT" name="setupExtent" finished-at="2023-08-19T10:18:25 GMT" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:47 GMT" name="setup" finished-at="2023-08-18T07:58:50 GMT" duration-ms="2523" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:26 GMT" name="setup" finished-at="2023-08-19T10:18:28 GMT" duration-ms="2490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchAppiumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:50 GMT" name="searchAppiumTest" finished-at="2023-08-18T07:58:54 GMT" duration-ms="3867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAppiumTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:54 GMT" name="teardown" finished-at="2023-08-18T07:58:54 GMT" duration-ms="124" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchAppiumTest status=SUCCESS method=GooglePageTest.searchAppiumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:54 GMT" name="setup" finished-at="2023-08-18T07:58:55 GMT" duration-ms="1271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchSeleniumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:55 GMT" name="searchSeleniumTest" finished-at="2023-08-18T07:58:59 GMT" duration-ms="3799" status="FAIL">
+        <test-method signature="searchCucumberTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:28 GMT" name="searchCucumberTest" finished-at="2023-08-19T10:18:32 GMT" duration-ms="4303" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Selenium Tutorial - Google Search P] but found [Selenium Tutorial - Google Search]]]>
+              <![CDATA[expected [Cucumber Tutorial - Google Search Page] but found [Cucumber Tutorial - Google Search]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Selenium Tutorial - Google Search P] but found [Selenium Tutorial - Google Search]
+              <![CDATA[java.lang.AssertionError: expected [Cucumber Tutorial - Google Search Page] but found [Cucumber Tutorial - Google Search]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at testScripts.GooglePageTest.searchSeleniumTest(GooglePageTest.java:68)
+at testScripts.GooglePageTest.searchCucumberTest(GooglePageTest.java:81)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,62 +62,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchSeleniumTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:59 GMT" name="teardown" finished-at="2023-08-18T07:58:59 GMT" duration-ms="3" status="FAIL">
+        </test-method> <!-- searchCucumberTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:32 GMT" name="teardown" finished-at="2023-08-19T10:18:33 GMT" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchSeleniumTest status=FAILURE method=GooglePageTest.searchSeleniumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30] output={null}]]]>
+                <![CDATA[[TestResult name=searchCucumberTest status=FAILURE method=GooglePageTest.searchCucumberTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.fail(String)" because "this.extentTest" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.fail(String)" because "this.extentTest" is null
-at testScripts.GooglePageTest.teardown(GooglePageTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="finishExtent()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-18T07:58:59 GMT" name="finishExtent" finished-at="2023-08-18T07:58:59 GMT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:33 GMT" name="setup" finished-at="2023-08-19T10:18:34 GMT" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchSeleniumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:34 GMT" name="searchSeleniumTest" finished-at="2023-08-19T10:18:37 GMT" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSeleniumTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:37 GMT" name="teardown" finished-at="2023-08-19T10:18:38 GMT" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchSeleniumTest status=SUCCESS method=GooglePageTest.searchSeleniumTest()[pri:0, instance:testScripts.GooglePageTest@73e9cf30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="finishExtent()[pri:0, instance:testScripts.GooglePageTest@73e9cf30]" started-at="2023-08-19T10:18:38 GMT" name="finishExtent" finished-at="2023-08-19T10:18:38 GMT" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishExtent -->
