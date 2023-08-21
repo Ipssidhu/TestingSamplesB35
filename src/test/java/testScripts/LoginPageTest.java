@@ -42,7 +42,7 @@ public class LoginPageTest {
   public void validLogin(String strUsr, String strPwd) {
 	  driver.get(prop.getProperty("url"));
 	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys(strUsr);
-      driver.findElement(By.xpath("//input[@name='password' and @type='password']")).sendKeys(strPwd);
+      driver.findElement(By.id("password")).sendKeys(strPwd);
       driver.findElement(By.cssSelector(".fa.fa-2x.fa-sign-in")).click();
       boolean isDisp = driver.findElement(By.cssSelector("div.flash.success")).isDisplayed();
       Assert.assertTrue(isDisp);
