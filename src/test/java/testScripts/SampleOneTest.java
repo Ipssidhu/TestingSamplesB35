@@ -26,18 +26,18 @@ public class SampleOneTest {
 		else if(strBrowser.equalsIgnoreCase("edge")) {
 			 driver = new EdgeDriver();
 			}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		
 	}
-  @Test
+  @Test(retryAnalyzer=RetryAnalyser.class)
   public void searchCypressTest() {
 	  
 		driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Cypress Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search");
+		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search Page");
   }
   
   @AfterMethod
