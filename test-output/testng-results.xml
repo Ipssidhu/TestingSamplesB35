@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-21T05:37:17 GMT" name="Default suite" finished-at="2023-08-21T05:37:55 GMT" duration-ms="37677">
+  <suite started-at="2023-08-21T06:02:34 GMT" name="Default suite" finished-at="2023-08-21T06:03:10 GMT" duration-ms="36135">
     <groups>
     </groups>
-    <test started-at="2023-08-21T05:37:17 GMT" name="Default test" finished-at="2023-08-21T05:37:55 GMT" duration-ms="37677">
+    <test started-at="2023-08-21T06:02:34 GMT" name="Default test" finished-at="2023-08-21T06:03:10 GMT" duration-ms="36135">
       <class name="testScripts.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:17 GMT" name="setup" finished-at="2023-08-21T05:37:20 GMT" duration-ms="2763" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:34 GMT" name="setup" finished-at="2023-08-21T06:02:37 GMT" duration-ms="3528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:20 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T05:37:23 GMT" duration-ms="3496" status="PASS">
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:37 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T06:02:41 GMT" duration-ms="3464" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:23 GMT" name="teardown" finished-at="2023-08-21T05:37:23 GMT" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:41 GMT" name="teardown" finished-at="2023-08-21T06:02:41 GMT" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:23 GMT" name="setup" finished-at="2023-08-21T05:37:25 GMT" duration-ms="1266" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:41 GMT" name="setup" finished-at="2023-08-21T06:02:42 GMT" duration-ms="1217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:25 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T05:37:33 GMT" duration-ms="8379" status="FAIL">
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:42 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T06:02:51 GMT" duration-ms="8388" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -56,9 +56,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0bfb1aeae27efcb9ad75ad2728e92402, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bfb1aeae27efcb9ad75ad2728e92402]]>
+Command: [7400616e7330c412d8e6efd4ad4c7b52, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57623/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7400616e7330c412d8e6efd4ad4c7b52]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.flash.success"}
@@ -67,9 +67,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0bfb1aeae27efcb9ad75ad2728e92402, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bfb1aeae27efcb9ad75ad2728e92402
+Command: [7400616e7330c412d8e6efd4ad4c7b52, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57623/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7400616e7330c412d8e6efd4ad4c7b52
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,15 +121,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:33 GMT" name="teardown" finished-at="2023-08-21T05:37:35 GMT" duration-ms="2106" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:51 GMT" name="teardown" finished-at="2023-08-21T06:02:51 GMT" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:35 GMT" name="setup" finished-at="2023-08-21T05:37:36 GMT" duration-ms="1202" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:51 GMT" name="setup" finished-at="2023-08-21T06:02:52 GMT" duration-ms="1244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:36 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T05:37:45 GMT" duration-ms="8452" status="FAIL">
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:02:52 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T06:03:00 GMT" duration-ms="8487" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -150,9 +150,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd840d6af285c0cf088863eeee560f9d, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56320/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd840d6af285c0cf088863eeee560f9d]]>
+Command: [94e31ab7e31cc0b0edc197e7ecd5d40f, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57652/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 94e31ab7e31cc0b0edc197e7ecd5d40f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.flash.success"}
@@ -161,9 +161,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd840d6af285c0cf088863eeee560f9d, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56320/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dd840d6af285c0cf088863eeee560f9d
+Command: [94e31ab7e31cc0b0edc197e7ecd5d40f, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57652/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 94e31ab7e31cc0b0edc197e7ecd5d40f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -215,15 +215,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:45 GMT" name="teardown" finished-at="2023-08-21T05:37:45 GMT" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:03:00 GMT" name="teardown" finished-at="2023-08-21T06:03:00 GMT" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:45 GMT" name="setup" finished-at="2023-08-21T05:37:46 GMT" duration-ms="1199" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:03:00 GMT" name="setup" finished-at="2023-08-21T06:03:02 GMT" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:46 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T05:37:55 GMT" duration-ms="8439" status="FAIL">
+        <test-method signature="validLogin(java.lang.String,java.lang.String)[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:03:02 GMT" name="validLogin" data-provider="LoginData" finished-at="2023-08-21T06:03:10 GMT" duration-ms="8054" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -244,9 +244,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb3cb8aeb2a6b0b348b819d0fd9affb3, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56349/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb3cb8aeb2a6b0b348b819d0fd9affb3]]>
+Command: [b5e8a0f94b9b646d4488a553b53f0f4f, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57681/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5e8a0f94b9b646d4488a553b53f0f4f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.flash.success"}
@@ -255,9 +255,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb3cb8aeb2a6b0b348b819d0fd9affb3, findElement {using=css selector, value=div.flash.success}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56349/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb3cb8aeb2a6b0b348b819d0fd9affb3
+Command: [b5e8a0f94b9b646d4488a553b53f0f4f, findElement {using=css selector, value=div.flash.success}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57681/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5e8a0f94b9b646d4488a553b53f0f4f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -309,7 +309,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T05:37:55 GMT" name="teardown" finished-at="2023-08-21T05:37:55 GMT" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testScripts.LoginPageTest@b9b00e0]" started-at="2023-08-21T06:03:10 GMT" name="teardown" finished-at="2023-08-21T06:03:10 GMT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
