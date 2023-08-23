@@ -27,6 +27,6 @@ public class RemoteDriverTest {
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Cypress Tutorial");
 		srcBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search Page");
+		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search");
   }
 }
