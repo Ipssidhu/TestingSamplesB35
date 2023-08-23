@@ -20,13 +20,15 @@ public class RemoteDriverTest {
   public void remoteTest() throws MalformedURLException {
 	  ChromeOptions options = new ChromeOptions();
 	  options.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);
-	  options.setCapability(CapabilityType.BROWSER_VERSION, "116");
-	  String strHub ="";
+	//  options.setCapability(CapabilityType.BROWSER_VERSION, "116");
+	  String strHub ="http://172.31.13.83:4444";
 	  driver = new RemoteWebDriver(new URL(strHub), options);
 	  driver.navigate().to("https://www.google.com/");
 		WebElement srcBox= driver.findElement(By.name("q"));
 		srcBox.sendKeys("Cypress Tutorial");
-		srcBox.sendKeys(Keys.ENTER);
+		srcBox.submit();
+
+		System.out.println("Page Title .... "+driver.getTitle());
 		Assert.assertEquals(driver.getTitle(), "Cypress Tutorial - Google Search");
   }
 }
